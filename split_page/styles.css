@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+}
+
+#item1 {
+  background: url(https://i.redd.it/z2bankkbqgp41.jpg) no-repeat;
+  background-size: cover;
+  transition: all 0.8s linear ;
+  flex: 1;
+}
+
+#item2 {
+  background: url(https://wallpaperaccess.com/full/781179.jpg) no-repeat;
+  background-size: cover;
+  transition: all 0.8s linear ;
+  flex: 1;
+}

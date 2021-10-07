@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(190, 179, 179);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 400px;
+  width: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+}
+
+.card_img {
+  width: 100%;
+  height: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_info {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card_description {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card_user {
+  display: flex;
+  align-items: center;
+  gap: 12px
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+}
+
+.avatar>img {
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.time {
+  color: #333;
+  font-size: 14px;
+}
+
+.placeholder_load {
+  background: #000;
+
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: placeholderAnimate;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eee 2%, #ddd 18%, #eee 33%);
+  background-size: 1300px;
+}
+
+.animated-bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+  animation-name: placeholderAnimate;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eee 2%, #ddd 18%, #eee 33%);
+}
+
+@keyframes placeholderAnimate {
+  0% {
+    background-position: -650px 0;
+  }
+
+  100% {
+    background-position: 650px 0;
+  }
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: purple;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  padding: 15px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 200px;
+  transition: width ease 0.6s;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: #fff;
+  font-size: 24px;
+  outline: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+

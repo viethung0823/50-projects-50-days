@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: url(/img/BB.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: all 0.8s ease-in;
+}
+
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  gap: 10px;
+  margin: auto;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  border-radius: 20px;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.8s ease-in;
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.card.active {
+  flex: 5;
+}
+
+.card.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .card:nth-of-type(4),
+  .card:nth-of-type(5) {
+    display: none;
+  }
+}

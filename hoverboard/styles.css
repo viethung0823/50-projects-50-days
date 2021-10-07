@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  height: 16px;
+  width: 16px;
+  background-color: rgb(24, 23, 23);
+  transition: 0.2s ease;
+}
+
+.on {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

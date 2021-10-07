@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  margin: 0;
+  background: url(https://pbs.twimg.com/media/EOGmD8lX0AAaxtH.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  transition: backdrop-filter linear 6s;
+}
+
+h1 {
+  color: #fff;
+  margin: auto;
+}

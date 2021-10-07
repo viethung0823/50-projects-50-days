@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress step</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <form id="password_generator">
+    <label for="password_generator">Password Generator</label>
+    <div id="password_bar">
+      <div class="password"></div>
+      <button class="btn copy_btn"><i class="far fa-clipboard"></i></button>
+    </div>
+    <div>
+      <label for="password_length">Password Length</label>
+      <input type="number" value="6" step="1" min="6" max="20" id="password_length">
+    </div>
+    <div>
+      <label for="password_uppercase">Include uppercase letters</label>
+      <input type="checkbox" id="password_uppercase">
+    </div>
+    <div>
+      <label for="password_lowercase">Include lowercase letters</label>
+      <input type="checkbox" id="password_lowercase">
+    </div>
+    <div>
+      <label for="password_number">Include numbers</label>
+      <input type="checkbox" id="password_number">
+    </div>
+    <div>
+      <label for="password_symbol">Include symbols</label>
+      <input type="checkbox" id="password_symbol">
+    </div>
+    <button class="btn generate_btn">Generate Password</button>
+  </form>
+  
+  <script src="main.js"></script>
+</body>
+</html>

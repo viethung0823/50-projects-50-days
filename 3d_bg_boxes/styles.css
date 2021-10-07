@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(206, 79, 79);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  position: relative;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  height: 460px;
+  width: 460px;
+  transition: 0.4s ease;
+}
+
+.box--m {
+  height: 105px;
+  width: 105px;
+  background: url(https://images.unsplash.com/photo-1632019095901-e161238bf507?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) center no-repeat;
+  position: relative;
+  animation: rotate 0.4s ease-in-out;
+}
+
+.box--m::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -4px;
+  width: 4px;
+  height: 100%;
+  transform: skewY(45deg);
+  background-color: rgba(223, 26, 26, 0.897);
+}
+
+.box--m::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: -4px;
+  height: 4px;
+  width: 100%;
+  transform: skewX(45deg);
+  background-color: rgb(152 17 17 / 90%);
+}
+
+.box--l {
+  background: url(https://images.unsplash.com/photo-1632019095901-e161238bf507?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) center no-repeat;
+  background-size: cover;
+  height: 520px;
+  width: 520px;
+}
+
+.box--l::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -8px;
+  width: 8px;
+  height: 100%;
+  transform: skewY(45deg);
+  background-color: rgba(223, 26, 26, 0.897);
+}
+
+.box--l::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: -8px;
+  height: 8px;
+  width: 100%;
+  transform: skewX(45deg);
+  background-color: rgb(152 17 17 / 90%);
+}
+
+button {
+  padding: 16px;
+  border: none;
+  background-color: rgb(168, 31, 31);
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}

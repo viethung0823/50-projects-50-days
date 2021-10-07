@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(100, 22, 90);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+
+.range_slider_container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 14px;
+  width: 160px;
+}
+
+label {
+  position: absolute;
+  height: 32px;
+  width: 46px;
+  background-color: #fff;
+  border-radius: 8px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -36px;
+  left: -10px;
+}

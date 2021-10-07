@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(77, 139, 163);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(160, 9, 160);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  from {
+  transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}

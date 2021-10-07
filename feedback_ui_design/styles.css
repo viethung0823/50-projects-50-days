@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback_form {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 32px;
+  position: relative;
+}
+
+.feedback,
+.thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.feedback>h1,
+.thanks>h1 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.feedback>.feeling_container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.feedback>.feeling_container>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 4px;
+}
+
+.feedback>.feeling_container>div:hover,
+.feedback>.feeling_container>div.active {
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.emoji {
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 14px;
+  color: #444;
+}
+
+button {
+  border: none;
+  background-color: rgb(88, 42, 42);
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+.thanks>h1 {
+  margin-bottom: 12px;
+}
+
+.ur_feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.ur_feedback>.name {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.thanks>p {
+  font-size: 15px;
+}
+
+.thanks>button {
+  position: absolute;
+  font-size: 16px;
+  right: 12px;
+  top: 12px;
+}
+
+.hide {
+  display: none;
+}

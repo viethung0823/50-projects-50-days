@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(170, 116, 231);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.image {
+  position: relative;
+}
+
+img {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  width: auto;
+  display: block;
+  height: 70vh;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.heart {
+  position: absolute;
+  border: 32px solid transparent;
+  border-top-color: red;
+  border-radius: 50%;
+  animation: biggerFade 0.8s;
+}
+
+.heart::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(-27px, -49.8px);
+}
+
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(-3px, -49.8px);
+}
+
+@keyframes biggerFade {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

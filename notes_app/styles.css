@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(90, 88, 212);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 32px;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+.create_btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 12px 20px;
+  border-radius: 42px;
+  background-color: rgb(15, 4, 56);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.create_btn:hover {
+  transform: scale(0.98);
+}
+
+.create_btn>i {
+  margin-right: 6px;
+}
+
+.note {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.note_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: flex-wrap 0.4s ease;
+}
+
+.top_bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 32px;
+  background-color: rgb(197, 71, 71);
+  padding: 0 12px;
+  gap: 12px;
+}
+
+.edit_btn:hover,
+.remove_btn:hover {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+
+  to {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+}
+
+#text_note {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 12px;
+  min-height: 220px;
+  min-width: 220px;
+}
+
+.disable_edit {
+  color: #000;
+}

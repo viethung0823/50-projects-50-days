@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(161, 33, 33);
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.speed {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-style: 18px;
+  color: #fff;
+}
+
+input {
+  width: 40px;
+}
